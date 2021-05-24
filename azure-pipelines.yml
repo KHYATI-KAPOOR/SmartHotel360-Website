@@ -13,15 +13,13 @@ steps:
 - script: 
   displayName: 'Run a one-line script'
 
-- script: #{Secret1}#
-          #{secret2}#
-          #{ConnectionStrings--AppDatabase}#
+- script: 
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 - task: replacetokens@3
   inputs:
-    targetFiles: '**/*.config'
+    targetFiles: '.yaml'
     encoding: 'auto'
     writeBOM: true
     actionOnMissing: 'warn'
