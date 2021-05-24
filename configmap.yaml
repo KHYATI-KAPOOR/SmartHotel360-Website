@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-configmap
+data:
+  variable1: #{Secret1}#
+  variable2: #{Secret2}#
+  DBCONN: #{ConnectionStrings--AppDatabase}#
