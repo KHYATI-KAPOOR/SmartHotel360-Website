@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: replacetokens@3
   inputs:
-    targetFiles: '**/*.configmap'
+    targetFiles: '**/*.configmap.yaml'
     encoding: 'auto'
     writeBOM: true
     actionOnMissing: 'warn'
