@@ -35,4 +35,5 @@ steps:
     script: |
       # Write your commands here
       pwd
-      echo configmap.yaml
+      ls
+      cat configmap.yaml
